@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <script>
+function Counter(text) {
+    var lng = text.length;
+    document.getElementById("charcount").innerHTML = lng + ' out of 400 possible letters';
+}
+
+    </script>
+</head>
+<body>
+    <textarea id="textbox" onkeyup="Counter(this.value)"></textarea>
+    <span id="charcount"></span>
+</body>
+</html>
